@@ -1,0 +1,44 @@
+---
+import Container from "../../Container.astro";
+import Wave from "../../Wave.astro";
+---
+
+<section class="bg-Facturacion bg-fixed bg-cover h-[100vh]">
+    <div class="h-full bg-gradient-to-r from-red-600/75 to-red-500/70 content-center">
+        <Container>
+            <div class="mb-5">
+                <div class="flex space-x-4">
+                    <img
+                        src="/Img/DOC-WHITE.png"
+                        alt=""
+                        width="50"
+                    />
+                    <h1
+                        class="montserrat-bold text-white text-3xl content-center"
+                    >
+                        Portal
+                    </h1>
+                </div>
+            </div>
+            <h1
+                data-aos="fade-up"
+                data-aos-delay="100"
+                class="text-left text-4xl lg:text-7xl whitespace-normal mb-8 montserrat-bold text-white"
+            >
+                Facturacion Electronica
+            </h1>
+
+            <p
+                data-aos="fade-up"
+                data-aos-delay="200"
+                class="w-full md:w-3/5 text-xl whitespace-normal montserrat-regular mr-80 mb-14 text-white"
+            >
+                ADON es una solución completa de facturación electrónica 100%
+                basada en internet. Le permite a su empresa generar, enviar, y
+                administrar facturas electrónicas de manera fácil, práctica y
+                eficaz.
+            </p>
+        </Container>
+        <Wave></Wave>
+    </div>
+</section>

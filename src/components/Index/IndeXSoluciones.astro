@@ -1,0 +1,71 @@
+---
+import Container from "../Container.astro";
+import GridSoluciones from "./GridSoluciones.astro";
+---
+
+<section class="my-10">
+    <Container>
+        <div class="flex space-x-3 mb-20">
+            <h1 class="text-6xl text-dark montserrat-bold text-left">Conoce nueestras <br>  soluciones</h1>
+        </div>
+        <div class="grid grid-cols-4 gap-5 ">
+            <div class=" col-span-4 md:col-span-2 lg:col-span-1  group rounded-2xl p-5 text-dark
+             hover:text-white hover:bg-red-500 content-center  hover:shadow-lg" id="car">
+                <div class="my-10">
+                    <img src="/public/Img/Icons/ADON-GRAY.png" class=" m-auto group-hover:filter group-hover:brightness-0 group-hover:invert" alt="" width="100">
+                    <h1 class="montserrat-bold my-10 text-xl text-center">
+                        Facturacion electronica
+                    </h1>
+    
+                    <p class="text-sm montserrat-regular mt-3 text-center">
+                        Realice desde un portal web sus facturas electrónicas, en cualquier lugar las 24 horas del día.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class=" col-span-4 md:col-span-2 lg:col-span-1 group rounded-xl p-5 text-dark
+            hover:text-white hover:bg-red-500 content-center hover:shadow-lg">
+                <div class="my-10">
+                    <img src="/public/Img/Icons/NOMIWEB-GRAY.png" alt="" class=" m-auto group-hover:filter group-hover:brightness-0  group-hover:invert" width="200">
+                    <h1 class="montserrat-bold my-10 text-xl text-center">
+                        Nomina
+                    </h1>
+     
+                    <p class="text-sm montserrat-regular mt-3 text-center">
+                     Te ayudamos a generarlos, ya sea por web o portal. Y si tú emites ya tus XML en versión 3.2, te lo timbramos. Todo de una manera sencilla y rápida.
+                    </p>
+                </div>
+
+           </div>
+
+           <div class=" col-span-4 md:col-span-2 lg:col-span-1 group rounded-xl p-5 text-dark
+           hover:text-white hover:bg-red-500 content-center hover:shadow-lg">
+                <div class="my-10">
+                    <img src="/public/Img/Icons/RAV-GRAY.png" alt="" width="100" class="m-auto group-hover:filter group-hover:brightness-0 group-hover:invert">
+                    <h1 class="montserrat-bold my-10 text-xl text-center">
+                        RAV
+                    </h1>
+      
+                    <p class="text-sm montserrat-regular mt-3 text-center">
+                      Es una solución para recepción, almacenamiento y validación de factura electrónica. Para que validen y remitan sus comprobantes a revisión de pago. </p>
+      
+                </div>
+          </div>
+
+          <div class=" col-span-4 md:col-span-2 lg:col-span-1 rounded-xl p-5 text-dark content-center
+          hover:text-white hover:bg-red-500 hover:shadow-lg">
+             <img src="/public/Img/" alt="">
+             <h1 class="montserrat-bold text-xl text-center">
+                 Contabilidad electronica
+             </h1>
+
+             <p class="text-sm montserrat-regulr mt-3 text-center">
+                Es una solución que genera balanzas y polizas en un formato XML, para las personas físicas y morales.             
+            </p>
+
+         </div>
+
+        </div>
+    </Container>
+</section>

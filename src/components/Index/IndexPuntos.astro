@@ -1,0 +1,74 @@
+---
+import { CardDetalle } from "./UIComponents/CardDetalle";
+import { CardSimple } from "./UIComponents/CardSimple";
+import {
+    lstCaracterisiticas,
+    lstCaracterisiticasDetallado,
+} from "../../Data/Index/dataIndex";
+import Container from "../Container.astro";
+
+import '../../styles/fonts.css'
+
+---
+
+<section class="content-center bg-fixed bg-cover bg-puntosIndex">
+    <Container>
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-12 lg:col-span-4 content-center">
+                <h1
+                    data-aos="fade-up" data-aos-delay="100" class="text-5xl montserrat-bold text-center my-5 lg:text-left text-white "
+                >
+                    Beneficios
+                </h1>
+                <div
+                    data-aos="fade-up" data-aos-delay="100"
+                    class="col-span-2 text-center sm:text-left before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-white "
+                    style="display: block; margin: auto;"
+                >
+                </div>
+
+                <h2
+                    data-aos="fade-up" data-aos-delay="180"
+                    class="text-white montserrat-regular text-center lg:text-left text-2xl font-light "
+                >
+                    Contamos con algunos puntos que sabemos que son muy
+                    importantes para ti.
+                </h2>
+            </div>
+            <div  class="col-span-12 lg:col-span-4 ">
+                <CardSimple client:visible infoDetalle={lstCaracterisiticas} />
+            </div>
+            <div  class="col-span-12 lg:col-span-4 ">
+                <CardDetalle
+                    client:visible
+                    infoDetalle={lstCaracterisiticasDetallado}
+                />
+            </div>
+        </div>
+    </Container>
+</section>
+
+<!-- <style>
+    .montserrat-light {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    .montserrat-bold {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+    }
+</style> -->
+
+<!-- <style>
+    .bgPuntos {
+        background-image: url(../../../public/Img/Backgrounds/bgPuntos.jpg);
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+
+</style> -->

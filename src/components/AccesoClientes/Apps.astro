@@ -1,0 +1,101 @@
+---
+import { CarouselCardsApps } from "./JSX/CarouselCardsApps";
+
+import Container from "../Container.astro";
+// import { Loader } from "../Loader/Loader";
+---
+
+<section class="my-20 bg-white content-center" id="appAdon">
+    <div class="">
+        <div
+            class="col-span-12 md:col-span-7 content-center [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]"
+        >
+            <CarouselCardsApps client:load />
+        </div>
+
+        <div class="mt-16">
+            <h1
+                data-aos="fade-up"
+                data-aos-delay="100"
+                class="montserrat-bold text-yellow-400 text-5xl text-center"
+            >
+                ¿Necesitas ayuda para el uso de tu sistema?
+            </h1>
+
+            <p
+                data-aos="fade-up"
+                data-aos-delay="200"
+                class="montserrat-regular text-gray-900 text-medium mx-5 md:text-xl text-center my-10"
+            >
+                Comunicate a unos de nuestros siguientes contactos para
+                brindarte soporte
+            </p>
+
+            <Container>
+                <div class="grid grid-cols-2 gap-5">
+                    <div
+                        class="col-span-2 md:col-span-1 w-full m-auto flex shadow-lg rounded-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
+                    >
+                        <div
+                            class="bg-gradient-to-r rounded-l-2xl from-yellow-300 p-5 to-yellow-200"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="50"
+                                height="50"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="icon text-white icon-tabler icons-tabler-filled icon-tabler-mail"
+                                ><path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"></path><path
+                                    d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z"
+                                ></path><path
+                                    d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z"
+                                ></path></svg
+                            >
+                        </div>
+                        <div class="flex flex-col ml-5 justify-center">
+                            <h1
+                                class="montserrat-regular text-xl text-gray-800"
+                            >
+                                soporte@adon.mx
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-2 md:col-span-1 w-full m-auto flex shadow-lg rounded-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"
+                    >
+                        <div
+                            class="bg-gradient-to-r rounded-l-2xl from-yellow-300 p-5 to-yellow-200"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="50"
+                                height="50"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="icon text-white icon-tabler icons-tabler-filled icon-tabler-phone"
+                                ><path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"></path><path
+                                    d="M9 3a1 1 0 0 1 .877 .519l.051 .11l2 5a1 1 0 0 1 -.313 1.16l-.1 .068l-1.674 1.004l.063 .103a10 10 0 0 0 3.132 3.132l.102 .062l1.005 -1.672a1 1 0 0 1 1.113 -.453l.115 .039l5 2a1 1 0 0 1 .622 .807l.007 .121v4c0 1.657 -1.343 3 -3.06 2.998c-8.579 -.521 -15.418 -7.36 -15.94 -15.998a3 3 0 0 1 2.824 -2.995l.176 -.005h4z"
+                                ></path></svg
+                            >
+                        </div>
+                        <div class="flex flex-col ml-5 justify-center">
+                            <h1
+                                class="montserrat-regular text-xl text-gray-800"
+                            >
+                                (81) 193 100 60 al 62
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </Container>
+        </div>
+    </div>
+</section>

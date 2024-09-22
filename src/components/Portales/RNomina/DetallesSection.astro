@@ -1,0 +1,82 @@
+---
+import Container from "../../Container.astro";
+import { FlexCard } from "./JSX/FlexCard";
+---
+
+<section class="my-20">
+    <div class="grid grid-cols-2 mb-20">
+        <div class="order-2 md:order-1 col-span-2 md:col-span-1 content-center">
+            <div
+                data-aos="zoom-in"
+                class="mt-10 md:mt-0 w-full"
+                data-aos-delay="100"
+            >
+            </div>
+        </div>
+        <div
+            class="order-1 col-span-2 md:col-span-1 flex px-6 md:px-12 justify-end"
+        >
+            <div class="content-center">
+                <h1
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    class="text-4xl md:text-6xl whitespace-normal montserrat-ebold text-red-500 text-right mb-10"
+                >
+                    Permite que los empleados puedan acceder a su nómina a
+                    través de este portal.
+                </h1>
+
+                <h2
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    class="text-2xl montserrat-regular mb-5 whitespace-normal text-green-600 text-right"
+                >
+                    El portal de facturación global es una aplicación que
+                    permite a sus clientes la creación de comprobantes fiscales
+                    CFDI a partir de una venta realizada desde cualquier punto
+                    de venta.
+                </h2>
+
+                <h2
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    class="text-medium montserrat-semibold mb-5 whitespace-normal text-green-600 text-right"
+                >
+                    Un empleado público podrá seguir accediendo a sus nóminas a
+                    pesar de que cambie de organismo, pudiendo ver las emitidas
+                    por los diferentes organismos donde haya estado destinado,
+                    siempre que éstos sean usuarios de ADON.
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <Container>
+        <div class="grid grid-cols-2">
+            <div
+                class="col-span-2 mb-10 md:mb-0 md:col-span-1 flex justify-normal"
+            >
+                <div class="w-11/12">
+                    <h1
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        class="text-4xl md:text-5xl montserrat-bold text-left text-gray-700"
+                    >
+                        En Nomiweb contamos con las siguientes caracteristicas
+                    </h1>
+
+                    <h2
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                        class="text-xl montserrat-regular mt-5 whitespace-normal text-green-600 text-left"
+                    >
+                        Generación, captura y timbrado de nómina
+                    </h2>
+                </div>
+            </div>
+            <div class="col-span-2 md:col-span-1">
+                <FlexCard />
+            </div>
+        </div>
+    </Container>
+</section>

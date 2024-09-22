@@ -1,0 +1,111 @@
+---
+import Container from "../../Container.astro";
+
+import { GridCards } from "./JSX/FlexCards";
+---
+
+<section class="my-20">
+    <div class="grid grid-cols-2 mb-20">
+        <div class="order-2 md:order-1 col-span-2 md:col-span-1 content-center">
+            <div
+                data-aos="zoom-in"
+                class="mt-10 md:mt-0 w-full"
+                data-aos-delay="100"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="450"
+                    height="450"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class=" -ml-32 icon md:mt-0 icon text-yellow-400 icon-tabler icons-tabler-outline icon-tabler-brand-backbone"
+                    ><path stroke="none" d="M0 0h24v24H0z" fill="none"
+                    ></path><path d="M5 20l14 -8l-14 -8z"></path><path
+                        d="M19 20l-14 -8l14 -8z"></path></svg
+                >
+                
+            </div>
+        </div>
+        <div
+            class="order-1 col-span-2 md:col-span-1 flex px-6 md:px-12 justify-end"
+        >
+            <div class="content-center">
+                <h1
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    class="text-4xl md:text-6xl whitespace-normal montserrat-ebold text-yellow-400 text-right mb-10"
+                >
+                    Fácil implementación, fácil capacitación y con un alto grado
+                    de adaptabilidad
+                </h1>
+
+                <h2
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    class="text-xl montserrat-regular mb-5 whitespace-normal text-green-600 text-right"
+                >
+                    Cumpliendo con el registro contable y los informes
+                    requeridos por ley inmediatamente a su implementación, y
+                    soportando la alineación gradual de los procesos a los
+                    lineamientos establecidos.
+                </h2>
+
+                <!-- <h2
+                    data-aos="fade-up"
+                    data-aos-delay="150"
+                    class="text-xl montserrat-semibold  whitespace-normal text-green-600 text-right"
+                >
+                    A través de medios electrónicos e ingresar de forma mensual
+                    su información contable.
+                </h2> -->
+            </div>
+        </div>
+    </div>
+
+    <Container>
+        <div class="grid grid-cols-2">
+            <div
+                class="col-span-2 mb-10 md:mb-0 lg:col-span-1 flex justify-normal"
+            >
+                <div class="w-11/12">
+                    <h1
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        class="text-4xl md:text-5xl montserrat-bold text-left text-gray-700"
+                    >
+                        La Ley General de Contabilidad Gubernamental (LGCG)
+                    </h1>
+
+                    <h2
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                        class="text-xl montserrat-regular mt-5 whitespace-normal text-green-600 text-left"
+                    >
+                        Busca transparentar y armonizar la información
+                        financiera relativa a la aplicación de los Recursos
+                        Públicos en los distintos órdenes de Gobierno.
+                        no.
+                    </h2>
+
+                    <h2
+                    data-aos="fade-up"
+                    data-aos-delay="150"
+                    class="text-xl montserrat-semibold mt-5 whitespace-normal text-green-600 text-left"
+                >
+                    Dicha Ley
+                    ya estableció fechas de cumplimiento y penalizaciones,
+                    algunas fechas han sido sujetas a prórrogas pero otras
+                    no.
+                </h2>
+                </div>
+            </div>
+            <div class="col-span-2 mt-10 lg:mt-0 lg:col-span-1">
+                <GridCards />
+            </div>
+        </div>
+    </Container>
+</section>

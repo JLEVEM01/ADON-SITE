@@ -1,0 +1,26 @@
+---
+import Container from "../Container.astro";
+import { CarouselAddendas } from "./UIComponents/CarouselAddendas";
+import { addendas } from "../../Data/Addendas/dataAddendas";
+import { ButtonC } from "./UIComponents/ButtonC";
+---
+
+<section >
+    <Container>
+        <div class="">
+            <h1 class="text-5xl text-center font-bold">
+                Addendas en tus facturas
+            </h1>
+            <h3 class="text-2xl my-3 text-center font-light">
+                En ADON actualmentecontamos con las siguientes addendas:
+            </h3>
+        </div>
+        <CarouselAddendas addendas={addendas} />
+        <div class="m-5">
+            <a href="Servicios/Addendas">
+                <ButtonC client:visible text="Ver mas" color="danger"></ButtonC>
+            </a>
+            <!-- <a href="Servicios/Addendas" class="border-large rounded-2xl text-2xl p-4 border-red-500 text-red-500 hover:bg-red-600 hover:border-0 hover:text-white">Ver mas</a> -->
+        </div>
+    </Container>
+</section>

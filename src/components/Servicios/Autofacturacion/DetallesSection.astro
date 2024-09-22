@@ -1,0 +1,103 @@
+---
+import Container from "../../Container.astro";
+
+import { FlexCard } from "./JSX/FlexCard";
+---
+
+<section class="my-20">
+    <div class="grid grid-cols-2 mb-20">
+        <div class="order-2 md:order-1 col-span-2 md:col-span-1 content-center">
+            <div
+                data-aos="zoom-in"
+                class="mt-10 md:mt-0 w-full"
+                data-aos-delay="100"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="450"
+                    height="450"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="-ml-32 mt-10 md:mt-0 text-blue-500 icon icon-tabler icons-tabler-filled icon-tabler-keyframes"
+                    ><path stroke="none" d="M0 0h24v24H0z" fill="none"
+                    ></path><path
+                        d="M8 4a2.599 2.599 0 0 0 -2 .957l-4.355 5.24a2.847 2.847 0 0 0 -.007 3.598l4.368 5.256c.499 .6 1.224 .949 1.994 .949a2.599 2.599 0 0 0 2 -.957l4.355 -5.24a2.847 2.847 0 0 0 .007 -3.598l-4.368 -5.256a2.593 2.593 0 0 0 -1.994 -.949z"
+                    ></path><path
+                        d="M16.382 4.214a1 1 0 0 1 1.32 .074l.084 .094l4.576 5.823c.808 .993 .848 2.396 .13 3.419l-.12 .158l-4.586 5.836a1 1 0 0 1 -1.644 -1.132l.072 -.104l4.596 -5.85a.845 .845 0 0 0 .06 -.978l-.07 -.1l-4.586 -5.836a1 1 0 0 1 .168 -1.404z"
+                    ></path><path
+                        d="M12.382 4.214a1 1 0 0 1 1.32 .074l.084 .094l4.576 5.823c.808 .993 .848 2.396 .13 3.419l-.12 .158l-4.586 5.836a1 1 0 0 1 -1.644 -1.132l.072 -.104l4.596 -5.85a.845 .845 0 0 0 .06 -.978l-.07 -.1l-4.586 -5.836a1 1 0 0 1 .168 -1.404z"
+                    ></path></svg
+                >
+
+            </div>
+        </div>
+        <div
+            class="order-1 col-span-2 md:col-span-1 flex px-6 md:px-12 justify-end"
+        >
+            <div class="content-center">
+                <h1
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    class="text-4xl md:text-6xl whitespace-normal montserrat-ebold text-blue-500 text-right mb-10"
+                >
+                    Simplifica tu Proceso de Facturación
+                </h1>
+
+                <h2
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    class="text-2xl montserrat-regular mb-5 whitespace-normal text-green-600 text-right"
+                >
+                    <span class="text-red-500 montserrat-semibold">ADON</span> le
+                    ofrece la solución a la expedición de CFDI por las ventas realizadas
+                    y servicios prestados por personas físicas del sector primario.
+                </h2>
+
+                <h2
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    class="text-medium montserrat-semibold mb-5 whitespace-normal text-green-600 text-right"
+                >
+                    Simplifica y agiliza la emisión de facturas, ya que el
+                    cliente puede gestionar sus propios comprobantes fiscales.
+                    Sin embargo, el prestador del servicio no queda exento de
+                    sus obligaciones fiscales.
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <Container>
+        <div class="grid grid-cols-2">
+            <div
+                class="col-span-2 mb-10 md:mb-0 md:col-span-1 flex justify-normal"
+            >
+                <div class="w-11/12">
+                    <h1
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        class="text-4xl md:text-5xl montserrat-bold text-left text-gray-700"
+                    >
+                        Arrendadores de bienes inmuebles, propietarios o
+                        titulares que afecten terrenos...
+                    </h1>
+
+                    <h2
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                        class="text-xl montserrat-regular mt-5 whitespace-normal text-green-600 text-left"
+                    >
+                        Bienes o derechos incluyendo derechos reales, ejidales o
+                        comunales, mineros, enajenantes de vehículos usados,
+                        desperdicios industrializables, obras de artes plásticas
+                        y antigüedades, por los adquirentes de sus bienes o
+                        servicios.
+                    </h2>
+                </div>
+            </div>
+            <div class="col-span-2 md:col-span-1">
+                <FlexCard />
+            </div>
+        </div>
+    </Container>
+</section>

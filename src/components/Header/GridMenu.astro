@@ -1,0 +1,15 @@
+---
+import { accesos } from "../../Data/Menu/menuData"
+import {Acceso} from "./Acceso"
+---
+
+
+<div  class="grid grid-cols-3 w-full h-full  p-3 gap-2 ">
+    {accesos.map(acceso => 
+        <Acceso
+            imagen={acceso.img}
+            text={acceso.text}
+            ruta={acceso.ruta}>
+        </Acceso>
+    )}
+</div>

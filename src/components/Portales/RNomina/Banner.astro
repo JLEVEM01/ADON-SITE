@@ -1,0 +1,41 @@
+---
+import Container from "../../Container.astro";
+import Wave from "../../Wave.astro";
+---
+
+<section class="bg-Nomina bg-fixed bg-cover h-[100vh]">
+    <div class="h-full bg-gradient-to-r from-rose-600/75 to-rose-500/70 content-center">
+        <Container>
+            <div class="mb-5">
+                <div class="flex space-x-4">
+                    <img
+                        src="/Img/Nomiweb.png"
+                        alt=""
+                        width="200"
+                    />
+                </div>
+            </div>
+            <h1
+                data-aos="fade-up"
+                data-aos-delay="100"
+                class="text-left text-4xl lg:text-7xl whitespace-normal mb-8 montserrat-bold text-white"
+            >
+                Nomina
+            </h1>
+
+            <p
+                data-aos="fade-up"
+                data-aos-delay="200"
+                class="w-full md:w-3/5 text-xl whitespace-normal montserrat-regular mr-80 mb-14 text-white"
+            >
+                El Servicio de Visualización de Nómina permite que los empleados
+                puedan acceder a su nómina a través de este portal, permitiendo
+                eliminar el recibo de nómina en papel. Cuando un usuario desea
+                ver su nómina, el portal Funciona consultará los datos
+                correspondientes y se los mostrará.
+            </p>
+        </Container>
+        <Wave></Wave>
+    </div>
+
+</section>

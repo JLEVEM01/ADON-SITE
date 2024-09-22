@@ -1,0 +1,131 @@
+---
+
+import { ButtonModal } from "./UIComponents/ButtonModal";
+import Container from "../Container.astro";
+import {Factura, Nomina, RAV, Contabilidad } from "./UIComponents/Icons/Iconos" 
+import '../../styles/fonts.css'
+---
+
+
+
+<section >
+    <Container>
+        <div class="grid grid-cols-2 gap-7">
+
+            <div data-aos="fade-right" data-aos-delay="100" class="col-span-2 md:col-span-1 lg:col-span-1 mb-10 md:mb-0 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                
+                <div class="hover:backdrop-blur-3xl bg-cover rounded-tl-3xl  bg-Facturacion h-60  text-transparent ">
+                    <div class=" h-full content-center bg-gradient-to-r from-red-800/90 to-red-700/85 rounded-tl-3xl  rounded-br-lg">
+                        <img src="/Img/ADON_LOGOW.png" alt="" width="200" class="m-auto">
+                    </div>
+                </div>
+                <!-- <div class="flex justify-between space-x-3 mx-2 content-center">
+                    <div class="content-center">
+                        <h1 class="text-2xl montserrat-regular text-dark text-center mt-2">Facturacion<h1>
+                    </div>
+
+                    <div class="mt-5 flex justify-center">
+                        <ButtonModal client:visible 
+                                solucion="Factura electrónica"
+                                text="Realice desde un portal web sus facturas electrónicas, en cualquier lugar las 24 horas del día"
+                                classProps="bg-Facturacion bg-fixed bg-cover h-[50vh]  rounded-2xl content-center"></ButtonModal>
+                    </div>                    
+                </div> -->
+            </div>
+
+
+            <div data-aos="fade-left" data-aos-delay="200" class="col-span-2 md:col-span-1 lg:col-span-1  mb-10 lg:mb-0 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                <div class="hover:backdrop-blur-3xl bg-cover rounded-tr-3xl  bg-Nomina h-60  text-transparent ">
+                    <div class=" h-full content-center bg-gradient-to-r from-rose-800/90 to-rose-700/85 rounded-tr-3xl ">
+                        <img src="/Img/Nomiweb.png" alt="" width="200" class="m-auto">
+                    </div>
+                </div>
+                <!-- <div class="flex justify-between space-x-3 mx-2 content-center">
+                    <div class="content-center">
+                        <h1 class="text-2xl montserrat-regular text-dark text-center mt-2">Nomina</h1>
+                    </div>
+                    <div class="mt-5 flex justify-center">
+                        <ButtonModal client:visible 
+                                solucion="Nomina"
+                                text="Te ayudamos a generarlos, ya sea por web o portal. Y si tú emites ya tus XML en versión 3.2, te lo timbramos. Todo de una manera sencilla y rápida."
+                                classProps="bg-Nomina bg-fixed bg-cover h-[50vh]  rounded-2xl content-center"></ButtonModal>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+            <div data-aos="fade-right" data-aos-delay="300" class=" col-span-2 md:col-span-1 lg:col-span-1 mb-10 lg:mb-0 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                <div class="hover:backdrop-blur-3xl bg-cover rounded-bl-3xl  bg-Rav h-60  text-transparent ">
+                    <div class=" h-full content-center bg-gradient-to-r from-red-800/90 to-red-700/85 rounded-bl-3xl ">
+                        <img src="/Img/RAV_WHITE.png" alt="" width="100" class="m-auto">
+                    </div>
+                </div>
+                <!-- <div class="flex justify-between space-x-3 mx-2 content-center">
+                    <div class="content-center">
+                        <h1 class="text-2xl montserrat-regular text-dark text-center mt-2">RAV</h1>
+                    </div>
+                    <div class="mt-5 flex justify-center">
+                        <ButtonModal client:visible 
+                                solucion="RAV"
+                                text="Es una solución para recepción, almacenamiento y validación de factura electrónica, a través de un portal, página web o EPR. Para que validen y remitan sus comprobantes a revisión de pago."
+                                classProps="bg-RAV bg-fixed bg-cover"></ButtonModal>
+                    </div>
+                </div> -->
+            </div>
+
+
+            <div data-aos="fade-left" data-aos-delay="400" class="col-span-2 md:col-span-1 lg:col-span-1 mb-10 lg:mb-0 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
+                
+                <div class="hover:backdrop-blur-3xl bg-cover rounded-tr-3xl rounded-br-3xl bg-Contabilidad h-60  text-transparent ">
+                    <div class=" h-full content-center bg-gradient-to-r from-green-800/90 to-green-700/85 rounded-br-3xl">
+                        <Contabilidad/>
+                    </div>
+                </div>
+                
+
+                <!-- <div class="flex justify-between space-x-3 mx-2 content-center">
+                    <div class="content-center">
+                        <h1 class="text-2xl montserrat-regulartext-dark text-center mt-2">Contabilidad E.</h1>
+                    </div>
+                    <div class="mt-5 flex justify-center">
+                        <ButtonModal client:visible 
+                                solucion="Contabilidad electronica"
+                                text="Es una solución que genera balanzas y polizas en un formato XML, para las personas físicas y morales."
+                                classProps="bg-Contabilidad bg-fixed bg-cover h-[50vh]  rounded-2xl content-center"></ButtonModal>
+                    </div>
+                </div> -->
+
+            </div>
+
+            
+        </div>
+    </Container>
+</section>
+
+
+<style>
+    .bgFacturacion {
+        background-image: url(../../../public/Img/Backgrounds/bgFacturacion.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bgNomina {
+        background-image: url(../../../public/Img/Backgrounds/bgNomina.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bgRAV {
+        background-image: url(../../../public/Img/Backgrounds/bgRAV.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bgContabilidad {
+        background-image: url(../../../public/Img/Backgrounds/bgContabilidad.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
