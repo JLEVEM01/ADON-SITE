@@ -1,71 +1,275 @@
 ---
 import Container from "../Container.astro";
 import GridSoluciones from "./GridSoluciones.astro";
+import { BorderBeam } from "../MagicUI/BorderBearm";
 ---
 
 <section class="my-10">
     <Container>
-        <div class="flex space-x-3 mb-20">
-            <h1 class="text-6xl text-dark montserrat-bold text-left">Conoce nueestras <br>  soluciones</h1>
+        <div class="flex space-x-3 mb-20 w-full">
+            <h1 class="text-6xl text-dark montserrat-bold text-left">
+                Conoce nueestras <br /> soluciones
+            </h1>
         </div>
-        <div class="grid grid-cols-4 gap-5 ">
-            <div class=" col-span-4 md:col-span-2 lg:col-span-1  group rounded-2xl p-5 text-dark
-             hover:text-white hover:bg-red-500 content-center  hover:shadow-lg" id="car">
-                <div class="my-10">
-                    <img src="/public/Img/Icons/ADON-GRAY.png" class=" m-auto group-hover:filter group-hover:brightness-0 group-hover:invert" alt="" width="100">
-                    <h1 class="montserrat-bold my-10 text-xl text-center">
-                        Facturacion electronica
-                    </h1>
-    
-                    <p class="text-sm montserrat-regular mt-3 text-center">
-                        Realice desde un portal web sus facturas electrónicas, en cualquier lugar las 24 horas del día.
-                    </p>
+
+        <div class="flex flex-row">
+            <div class="flex flex-col space-y-8">
+                <div class="flex flex-row space-x-4 justify-end">
+                    <div class="flex flex-col space-y-5 justify-end">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon text-right icon-tabler icons-tabler-outline icon-tabler-box-model-2"
+                            ><path stroke="none" d="M0 0h24v24H0z" fill="none"
+                            ></path><path d="M8 8h8v8h-8z"></path><path
+                                d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                            ></path></svg
+                        >
+
+                        <h1
+                            class="text-right text-4xl montserrat-bold text-red-500"
+                        >
+                            Servicios
+                        </h1>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-4 gap-5 p-6 rounded-3xl border-3 divide-x-2"
+                >
+                    <div 
+                        class="col-span-4 md:col-span-2 lg:col-span-1 group rounded-2xl p-8 text-dark
+                     hover:text-white hover:bg-green-500 content-center hover:shadow-lg transition ease-in-out delay-150hover:-translate-y-1 hover:scale-110 duration-300"
+                    >
+                        <div data-aos=fade-up data-aos-delay="100" class="my-10">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="80"
+                                height="80"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="icon icon-tabler m-auto text-dark icons-tabler-filled icon-tabler-chart-bubble"
+                                ><path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"></path><path
+                                    d="M6 12a4 4 0 1 1 -3.995 4.2l-.005 -.2l.005 -.2a4 4 0 0 1 3.995 -3.8z"
+                                ></path><path
+                                    d="M16 16a3 3 0 1 1 -2.995 3.176l-.005 -.176l.005 -.176a3 3 0 0 1 2.995 -2.824z"
+                                ></path><path
+                                    d="M14.5 2a5.5 5.5 0 1 1 -5.496 5.721l-.004 -.221l.004 -.221a5.5 5.5 0 0 1 5.496 -5.279z"
+                                ></path></svg
+                            >
+
+                            <h1
+                                class="montserrat-bold my-6 text-xl text-center"
+                            >
+                                Contabilidad <br /> electronica
+                            </h1>
+
+                            <!-- <p
+                                class="text-sm montserrat-regular mt-3 text-center"
+                            >
+                                Genera tus facturas en cualquier lugar las 24
+                                horas del día.
+                            </p> -->
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-4 md:col-span-2 lg:col-span-1 group rounded-xl p-5 text-dark
+                    hover:text-white hover:bg-yellow-300 content-center hover:shadow-lg transition ease-in-out delay-150hover:-translate-y-1 hover:scale-110 duration-300"
+                    >
+                        <div data-aos=fade-up data-aos-delay="300" class="my-10">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="80"
+                                height="80"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon md:mt-0 icon text-dark m-auto icon-tabler icons-tabler-outline icon-tabler-brand-backbone"
+                                ><path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"></path><path
+                                    d="M5 20l14 -8l-14 -8z"></path><path
+                                    d="M19 20l-14 -8l14 -8z"></path></svg
+                            >
+                            <h1
+                                class="montserrat-bold my-6 text-xl text-center"
+                            >
+                                Contabilidad gubernamental
+                            </h1>
+
+                            <!-- <p
+                                class="text-sm montserrat-regular mt-3 text-center"
+                            >
+                                Te ayudamos a generar tu nomina 4.0 de una
+                                manera sencilla y rápida.
+                            </p> -->
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-4 md:col-span-2 lg:col-span-1 group rounded-xl p-5 text-dark
+                   hover:text-white hover:bg-blue-500 content-center hover:shadow-lg transition ease-in-out delay-150hover:-translate-y-1 hover:scale-110 duration-300"
+                    >
+                        <div data-aos=fade-up data-aos-delay="500" class="my-10">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="80"
+                                height="80"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="mt-10 md:mt-0 text-dark m-auto icon icon-tabler icons-tabler-filled icon-tabler-keyframes"
+                                ><path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"></path><path
+                                    d="M8 4a2.599 2.599 0 0 0 -2 .957l-4.355 5.24a2.847 2.847 0 0 0 -.007 3.598l4.368 5.256c.499 .6 1.224 .949 1.994 .949a2.599 2.599 0 0 0 2 -.957l4.355 -5.24a2.847 2.847 0 0 0 .007 -3.598l-4.368 -5.256a2.593 2.593 0 0 0 -1.994 -.949z"
+                                ></path><path
+                                    d="M16.382 4.214a1 1 0 0 1 1.32 .074l.084 .094l4.576 5.823c.808 .993 .848 2.396 .13 3.419l-.12 .158l-4.586 5.836a1 1 0 0 1 -1.644 -1.132l.072 -.104l4.596 -5.85a.845 .845 0 0 0 .06 -.978l-.07 -.1l-4.586 -5.836a1 1 0 0 1 .168 -1.404z"
+                                ></path><path
+                                    d="M12.382 4.214a1 1 0 0 1 1.32 .074l.084 .094l4.576 5.823c.808 .993 .848 2.396 .13 3.419l-.12 .158l-4.586 5.836a1 1 0 0 1 -1.644 -1.132l.072 -.104l4.596 -5.85a.845 .845 0 0 0 .06 -.978l-.07 -.1l-4.586 -5.836a1 1 0 0 1 .168 -1.404z"
+                                ></path></svg
+                            >
+                            <h1
+                                class="montserrat-bold my-6 text-xl text-center"
+                            >
+                                Autofacturacion
+                            </h1>
+
+                            <!-- <p
+                                class="text-sm montserrat-regular mt-3 text-center"
+                            >
+                                Una solución para recepción, almacenamiento y
+                                validación de factura electrónica. -->
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-4 md:col-span-2 lg:col-span-1 rounded-xl p-5 text-dark content-center
+                  hover:text-white hover:bg-orange-500 hover:shadow-lg transition ease-in-out delay-150hover:-translate-y-1 hover:scale-110 duration-300"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="80"
+                            height="80"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="mt-10 md:mt-0 text-dark m-auto icon icon-tabler icons-tabler-outline icon-tabler-brand-juejin"
+                            ><path stroke="none" d="M0 0h24v24H0z" fill="none"
+                            ></path><path d="M2 12l10 7.422l10 -7.422"
+                            ></path><path d="M7 9l5 4l5 -4"></path><path
+                                d="M11 6l1 .8l1 -.8l-1 -.8z"></path></svg
+                        >
+                        <h1 class="montserrat-bold text-xl my-6 text-center">
+                            Addendas
+                        </h1>
+
+                        <!-- <p class="text-sm montserrat-regulr mt-3 text-center">
+                        Es una solución que genera balanzas y polizas en un formato XML, para las personas físicas y morales.             
+                    </p> -->
+                    </div>
                 </div>
 
+                <div
+                    class="grid grid-cols-3 gap-5 p-6 rounded-3xl border-3 divide-x-2"
+                >
+                    <div
+                        class="col-span-4 md:col-span-2 lg:col-span-1 group rounded-2xl p-8 text-dark
+                     hover:text-white hover:bg-red-500 content-center hover:shadow-lg transition ease-in-out delay-150hover:-translate-y-1 hover:scale-110 duration-300"
+                    >
+                        <div class="my-10">
+                            <img
+                                src="/public/Img/Icons/ADON-GRAY.png"
+                                class="m-auto group-hover:filter group-hover:brightness-0 group-hover:invert"
+                                alt=""
+                                width="100"
+                            />
+                            <h1
+                                class="montserrat-bold my-6 text-xl text-center"
+                            >
+                                Facturacion <br /> electronica
+                            </h1>
+
+                            <!-- <p
+                                class="text-sm montserrat-regular mt-3 text-center"
+                            >
+                                Genera tus facturas en cualquier lugar las 24
+                                horas del día.
+                            </p> -->
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-4 md:col-span-2 lg:col-span-1 group rounded-xl p-5 text-dark
+                    hover:text-white hover:bg-red-500 content-center hover:shadow-lg transition ease-in-out delay-150hover:-translate-y-1 hover:scale-110 duration-300"
+                    >
+                        <div class="my-10">
+                            <img
+                                src="/public/Img/Icons/NOMIWEB-GRAY.png"
+                                alt=""
+                                class="m-auto group-hover:filter group-hover:brightness-0 group-hover:invert"
+                                width="200"
+                            />
+                            <h1
+                                class="montserrat-bold my-6 text-xl text-center"
+                            >
+                                Nomina
+                            </h1>
+
+                            <!-- <p
+                                class="text-sm montserrat-regular mt-3 text-center"
+                            >
+                                Te ayudamos a generar tu nomina 4.0 de una
+                                manera sencilla y rápida.
+                            </p> -->
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-4 md:col-span-2 lg:col-span-1 group rounded-xl p-5 text-dark
+                   hover:text-white hover:bg-red-500 content-center hover:shadow-lg transition ease-in-out delay-150hover:-translate-y-1 hover:scale-110 duration-300"
+                    >
+                        <div class="my-10">
+                            <img
+                                src="/public/Img/Icons/RAV-GRAY.png"
+                                alt=""
+                                width="100"
+                                class="m-auto group-hover:filter group-hover:brightness-0 group-hover:invert"
+                            />
+                            <h1
+                                class="montserrat-bold my-6 text-xl text-center"
+                            >
+                                RAV
+                            </h1>
+
+                            <!-- <p
+                                class="text-sm montserrat-regular mt-3 text-center"
+                            >
+                                Una solución para recepción, almacenamiento y
+                                validación de factura electrónica.
+                            </p> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class=" col-span-4 md:col-span-2 lg:col-span-1 group rounded-xl p-5 text-dark
-            hover:text-white hover:bg-red-500 content-center hover:shadow-lg">
-                <div class="my-10">
-                    <img src="/public/Img/Icons/NOMIWEB-GRAY.png" alt="" class=" m-auto group-hover:filter group-hover:brightness-0  group-hover:invert" width="200">
-                    <h1 class="montserrat-bold my-10 text-xl text-center">
-                        Nomina
-                    </h1>
-     
-                    <p class="text-sm montserrat-regular mt-3 text-center">
-                     Te ayudamos a generarlos, ya sea por web o portal. Y si tú emites ya tus XML en versión 3.2, te lo timbramos. Todo de una manera sencilla y rápida.
-                    </p>
-                </div>
-
-           </div>
-
-           <div class=" col-span-4 md:col-span-2 lg:col-span-1 group rounded-xl p-5 text-dark
-           hover:text-white hover:bg-red-500 content-center hover:shadow-lg">
-                <div class="my-10">
-                    <img src="/public/Img/Icons/RAV-GRAY.png" alt="" width="100" class="m-auto group-hover:filter group-hover:brightness-0 group-hover:invert">
-                    <h1 class="montserrat-bold my-10 text-xl text-center">
-                        RAV
-                    </h1>
-      
-                    <p class="text-sm montserrat-regular mt-3 text-center">
-                      Es una solución para recepción, almacenamiento y validación de factura electrónica. Para que validen y remitan sus comprobantes a revisión de pago. </p>
-      
-                </div>
-          </div>
-
-          <div class=" col-span-4 md:col-span-2 lg:col-span-1 rounded-xl p-5 text-dark content-center
-          hover:text-white hover:bg-red-500 hover:shadow-lg">
-             <img src="/public/Img/" alt="">
-             <h1 class="montserrat-bold text-xl text-center">
-                 Contabilidad electronica
-             </h1>
-
-             <p class="text-sm montserrat-regulr mt-3 text-center">
-                Es una solución que genera balanzas y polizas en un formato XML, para las personas físicas y morales.             
-            </p>
-
-         </div>
-
         </div>
     </Container>
 </section>

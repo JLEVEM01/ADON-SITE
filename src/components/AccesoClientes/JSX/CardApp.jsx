@@ -29,6 +29,7 @@ export const CardApp = ({ Nombre, Imagen, Caracteristicas = [], url }) => {
                     <div className="mt-2 flex justify-center" >
                         <a href={url} className="border-2 border-red-500 text-red-500 hover:bg-red-500 montserrat-bold text-lg mx-auto m-0 text-center hover:text-white  py-2 px-7 rounded-lg">Ingresar</a>
                     </div>
+
                 </div>
 
 
