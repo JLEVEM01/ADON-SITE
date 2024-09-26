@@ -1,12 +1,14 @@
 ---
 import HeaderNav from "../components/Header/HeaderNav.astro";
 import { Footer } from "../components/Footer/Footer";
+const { title } = Astro.props;
+import Spinner from "../components/Loader/Spinner.astro";
+
 interface Props {
 	title: string;
 }
 
-const { title } = Astro.props;
-import Spinner from "../components/Loader/Spinner.astro";
+
 ---
 
 <!doctype html>
@@ -21,12 +23,14 @@ import Spinner from "../components/Loader/Spinner.astro";
 			href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="https://unpkg.com/transition-style">
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="../styles/transitionPage.css">
 		<!-- <link rel="stylesheet" href="../styles/fonts.css"> -->
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -37,14 +41,12 @@ import Spinner from "../components/Loader/Spinner.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-
+	<body >
+		<Spinner></Spinner>
 		<HeaderNav />
-		<main>
+		<main  class="left-layer left-layer left-layer--2 left-layer left-layer--3 left-layer left-layer--4" >
 			<slot />
-
 		</main>
-
 		<script src="../Scripts/AosScroll.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"

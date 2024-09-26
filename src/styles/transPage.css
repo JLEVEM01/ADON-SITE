@@ -1,0 +1,67 @@
+/* 
+  
+.buttons 
+{
+      position absolute
+  top 10px
+  left 10px
+  right 10px
+  bottom 10px
+  z-index -1
+  button 
+    border none
+    background rgba(0,0,0,0.02)
+    border-radius 5px
+    cursor pointer
+    &:hover 
+      background rgba(0,0,0,0.04)
+  #top 
+    position absolute
+    top 0%
+    left 50%
+  #bottom 
+    position absolute
+    bottom 0
+    left 50%
+  #left 
+    position absolute
+    top 50%
+    left 0px
+  #right 
+    position absolute
+    top 50%
+    right 0
+}
+    
+     */
+
+
+
+
+.left-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: auto;
+    left: -100%;
+    bottom: auto;
+    right: auto;
+    background: #4d606e;
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    left: 100%
+}
+
+.left-layer--2 {
+    background: #d3d4d8;
+    transition-delay: 0.3s;
+}
+
+.left-layer--3 {
+    background: #d3d4d8;
+    transition-delay: 0.12s;
+}
+
+.left-layer--4 {
+    background: #c06c84;
+    transition-delay: 0.08s;
+}

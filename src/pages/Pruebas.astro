@@ -3,15 +3,34 @@ import { CardApp } from "../components/AccesoClientes/JSX/CardApp";
 import { aplicaciones } from "../Data/AccesoClientes/dataAplicaciones";
 import Layout from "../layouts/Layout.astro";
 import GridMenu from "../components/Header/GridMenu.astro";
-import { Spinner } from "../components/Loader/Spinner";
-
+import Spinner from "../components/Loader/Spinner.astro";
 ---
 
+<!-- <Spinner></Spinner> -->
+
+<div class="m-auto">
+    <div class="relative group w-64 h-64 m-auto flex ">
+        <!-- Primer elemento -->
+        <div class="absolute top-0 left-0 z-10 transition-all duration-500 transform group-hover:-translate-x-10">
+          Elemento 1
+        </div>
+      
+        <!-- Segundo elemento -->
+        <div class="absolute top-10 left-0 z-20 transition-all duration-500 transform group-hover:-translate-x-20">
+          Elemento 2
+        </div>
+      
+        <!-- Tercer elemento -->
+        <div class="absolute top-20 left-0 z-30 transition-all duration-500 transform group-hover:-translate-x-32">
+          Elemento 3
+        </div>
+      </div>
+      
+</div>
 
 
 
-
-<!-- <section class="px-12">
+<section class="px-12">
     <div class="max-w-lg mx-auto relative">
         <input
             id="article-01"
@@ -344,7 +363,7 @@ import { Spinner } from "../components/Loader/Spinner";
             </article>
         </div>
     </div>
-</section> -->
+</section>
 
 <div class="">
     <svg

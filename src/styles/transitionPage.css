@@ -1,0 +1,21 @@
+@import "https://unpkg.com/transition-style/transition.hackpack.min.css";
+
+
+@keyframes wipe-in-left {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:left"] {
+  --transition__duration: 0.75s;
+}
+
+.--in-custom {
+  --transition__duration: 0.75s;
+  --transition__easing: ease-in-out;
+  animation-name: wipe-in-left;
+}
