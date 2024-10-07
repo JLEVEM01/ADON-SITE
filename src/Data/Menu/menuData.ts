@@ -50,7 +50,7 @@ export const accesos: Acceso[] = [
     },
     {
         img: "/public/Img/MENU_ICONS/contacto.png",
-        ruta: "",
+        ruta: "/Contacto",
         text: "Contacto"
     },
     {

@@ -70,7 +70,8 @@ export default {
 				"Addendas": "url('/public/Img/Backgrounds/bgAddendas.jpg')",
 				"Footer": "url('/public/Img/Backgrounds/bgFooter.jpg')",
 				"Wave": "url('/public/Img/Backgrounds/wavegray.png')",
-				"AccesoClientes": "url('/public/Img/Backgrounds/bgAccesoClientes.jpg')"
+				"AccesoClientes": "url('/public/Img/Backgrounds/bgAccesoClientes.jpg')",
+				"Contacto": "url('/public/Img/Backgrounds/bgContacto.jpg')"
 
 
 			},

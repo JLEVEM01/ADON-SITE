@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const menu = document.getElementById('icoMenu')
 
+    const sectionInfo = document.getElementById("sectionInfo")
+
     // Cuando se recarga la pagina
     window.addEventListener('load', () => {
         if (window.scrollY > 50) {
@@ -31,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 button.classList.add('text-dark')
                 button.classList.remove('md:text-white')
             })
+
+            sectionInfo.classList.add("bg-red-500")
+            sectionInfo.classList.remove("bg-gray-950/20")
         }
     });
 
@@ -58,6 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 link.classList.add('text-dark','after:bg-black');
                 link.classList.remove('md:text-white','after:bg-white')
             })
+
+            sectionInfo.classList.add("bg-red-500")
+            sectionInfo.classList.remove("bg-gray-950/20")
 
 
 
@@ -89,6 +97,9 @@ document.addEventListener("DOMContentLoaded", function () {
             
             menu.classList.add('text-white')
             menu.classList.remove('text-dark')
+
+            sectionInfo.classList.add("bg-gray-950/20")
+            sectionInfo.classList.remove("bg-red-500")
         }
     });
 });
