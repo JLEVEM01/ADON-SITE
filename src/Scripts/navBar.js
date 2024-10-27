@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const menu = document.getElementById('icoMenu')
 
     const sectionInfo = document.getElementById("sectionInfo")
+    const logo_color = document.getElementById("logo-color")
+    const logo_W = document.getElementById("logo-w");
 
     // Cuando se recarga la pagina
     window.addEventListener('load', () => {
@@ -36,6 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             sectionInfo.classList.add("bg-red-500")
             sectionInfo.classList.remove("bg-gray-950/20")
+
+            logo_color.classList.add("block");
+            logo_color.classList.add("hidden");
+
+            logo_W.classList.add("hidden");
+            logo_W.classList.remove("block");
         }
     });
 
@@ -66,6 +74,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             sectionInfo.classList.add("bg-red-500")
             sectionInfo.classList.remove("bg-gray-950/20")
+
+            logo_W.classList.add("hidden");
+            logo_W.classList.remove("md:block");
+
+            logo_color.classList.add("block");
+            logo_color.classList.remove("md:hidden")
 
 
 
@@ -100,6 +114,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
             sectionInfo.classList.add("bg-gray-950/20")
             sectionInfo.classList.remove("bg-red-500")
+
+
+            logo_W.classList.add("md:block")
+            logo_W.classList.remove("hidden")
+
+            logo_color.classList.add("md:hidden")
+            logo_color.classList.remove("block")
         }
     });
 });

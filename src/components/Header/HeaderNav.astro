@@ -69,8 +69,9 @@ import GridMenu from "./GridMenu.astro";
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
     >
         <!--Logo -->
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="/Img/adon_log.png" class="h-14 p-1" alt="Flowbite Logo" />
+        <a href="#" class="flex items-center space-x-0 rtl:space-x-reverse">
+            <img src="/Img/adon-w.png" class="w-48 h-14 p-1 hidden md:block " id="logo-w" alt="Flowbite Logo" />
+            <img src="/Img/adon_log.png" class="h-14 p-1 block md:hidden" id="logo-color" alt="Flowbite Logo" />
         </a>
 
         <!--Button movil-->
@@ -108,7 +109,7 @@ import GridMenu from "./GridMenu.astro";
         </button>
 
         <div
-            class="bg-white rounded-3xl h-full hidden md:hidden w-full mt-5"
+            class="bg-white rounded-3xl  h-full hidden md:hidden w-full mt-5"
             id="navbar-multi-level"
         >
             <GridMenu />
